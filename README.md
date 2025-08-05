@@ -1,12 +1,45 @@
-# React + Vite
+# Recipe CRUD API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A RESTful API for managing recipes, built with **Node.js**, **Express.js**, and **MongoDB** (via Mongoose). This project follows the **MVC architecture** and is fully documented using **Postman**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## Expanding the ESLint configuration
+Render Deployment: [https://your-render-url.onrender.com](#)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Postman Collection: [Link to Postman](#)
+
+---
+
+##  Folder Structure (MVC Pattern)
+recipe-app1/
+├── config/ # MongoDB connection
+├── controllers/ # Logic for handling recipe routes
+├── models/ # Mongoose schema for Recipe
+├── routes/ # All recipe API endpoints
+├── .env # Environment variables
+├── server.js # Main app entry point
+├── README.md
+
+## API Endpoints
+
+| Method | Endpoint            | Description             |
+|--------|---------------------|-------------------------|
+| POST   | `/api/recipes`      | Create a new recipe     |
+| GET    | `/api/recipes`      | Get all recipes         |
+| GET    | `/api/recipes/:id`  | Get a recipe by ID      |
+| PUT    | `/api/recipes/:id`  | Update recipe by ID     |
+| DELETE | `/api/recipes/:id`  | Delete recipe by ID     |
+
+> Use Postman to test each endpoint. Make sure to send `application/json` in the request body for POST/PUT.
+
+## 📦 Technologies Used
+
+- Node.js
+- Express.js
+- MongoDB & Mongoose
+- dotenv
+- Postman
+
+---
