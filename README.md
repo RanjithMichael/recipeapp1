@@ -34,7 +34,7 @@ recipe-app1/
 
 > Use Postman to test each endpoint. Make sure to send `application/json` in the request body for POST/PUT.
 
-## 📦 Technologies Used
+## Technologies Used
 
 - Node.js
 - Express.js
