@@ -2,7 +2,7 @@
   "name": "recipe-app1",
   "version": "1.0.0",
   "description": "A RESTful API for managing recipes, built with **Node.js**, **Express.js**, and **MongoDB** (via Mongoose). This project follows the **MVC architecture** and is fully documented using **Postman**.",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
