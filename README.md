@@ -1,45 +1,23 @@
-# Recipe CRUD API
+# Recipes CRUD App
 
-A RESTful API for managing recipes, built with **Node.js**, **Express.js**, and **MongoDB** (via Mongoose). This project follows the **MVC architecture** and is fully documented using **Postman**.
+## Features
+- Create, Read, Update, Delete recipes
+- Built with Node.js, Express, Mongoose (MongoDB)
+- MVC Architecture
+- Postman API Documentation
+- Deployable on Render
 
----
-
-## Live Demo
-
-Render Deployment: [https://your-render-url.onrender.com](#)
-
-Postman Collection: [Link to Postman](#)
-
----
-
-##  Folder Structure (MVC Pattern)
-recipe-app1/
-├── config/ # MongoDB connection
-├── controllers/ # Logic for handling recipe routes
-├── models/ # Mongoose schema for Recipe
-├── routes/ # All recipe API endpoints
-├── .env # Environment variables
-├── server.js # Main app entry point
-├── README.md
+## Setup
+1. Clone repo
+2. Run `npm install`
+3. Set `.env` with `MONGO_URI` and `PORT`
+4. Start server: `npm run dev`
 
 ## API Endpoints
-
-| Method | Endpoint            | Description             |
-|--------|---------------------|-------------------------|
-| POST   | `/api/recipes`      | Create a new recipe     |
-| GET    | `/api/recipes`      | Get all recipes         |
-| GET    | `/api/recipes/:id`  | Get a recipe by ID      |
-| PUT    | `/api/recipes/:id`  | Update recipe by ID     |
-| DELETE | `/api/recipes/:id`  | Delete recipe by ID     |
-
-> Use Postman to test each endpoint. Make sure to send `application/json` in the request body for POST/PUT.
-
-## Technologies Used
-
-- Node.js
-- Express.js
-- MongoDB & Mongoose
-- dotenv
-- Postman
+- `POST /api/recipes` → Create Recipe
+- `GET /api/recipes` → Get All Recipes
+- `GET /api/recipes/:id` → Get Recipe By ID
+- `PUT /api/recipes/:id` → Update Recipe
+- `DELETE /api/recipes/:id` → Delete Recipe
 
 ---

@@ -1,22 +1,31 @@
 {
   "name": "recipe-app1",
   "version": "1.0.0",
-  "description": "A RESTful Recipe CRUD API using Node.js, Express, and MongoDB",
-  "main": "server.js",
+  "description": "A RESTful API for managing recipes, built with **Node.js**, **Express.js**, and **MongoDB** (via Mongoose). This project follows the **MVC architecture** and is fully documented using **Postman**.",
+  "main": "app.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "keywords": ["nodejs", "express", "mongoose", "recipe", "crud", "api"],
-  "author": "Ranjith Backiaraj",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RanjithMichael/recipeapp1.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RanjithMichael/recipeapp1/issues"
+  },
+  "homepage": "https://github.com/RanjithMichael/recipeapp1#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "mongoose": "^8.16.5"
+    "mongoose": "^8.17.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
   }
 }
-
