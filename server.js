@@ -9,7 +9,7 @@ import app from "./app.js";
 dotenv.config();
 connectDB();
 
-const app = express();
+
 
 // Enable CORS
 app.use(cors());
