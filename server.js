@@ -4,6 +4,7 @@ import cors from "cors";
 import connectDB from "./config/db.js";
 import recipeRoutes from "./routes/recipeRoutes.js";
 import { notFound, errorHandler } from "./middlewares/errorMiddleware.js";
+import app from "./app.js";
 
 dotenv.config();
 connectDB();
